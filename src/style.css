@@ -58,10 +58,11 @@ font-family: Verdana;
 transition: all 0.5s 0s ease; 
 }
   
+@media (hover:hover) {
 .topnav a:hover {
 color: rgb(100, 100, 100);
 font-size: 19px;
-
+}
 }
 
 a {
@@ -104,6 +105,7 @@ text-decoration: none;
 
 }
 
+@media (hover:hover) {
 .img-card:hover {
   margin-top: 2.3vh;
   height: 250px;
@@ -112,7 +114,7 @@ text-decoration: none;
   overflow: hidden;
   border-radius: 50%;
   border: 7.5px solid rgb(99, 99, 99);
-  
+}
 }
 
 .gif-card {
@@ -192,6 +194,7 @@ text-decoration: none;
   transition: all 0.5s 0s ease; 
 }
 
+@media (hover:hover) {
 .button01:hover {
   border: 3px solid rgb(70, 70, 70);
   border-radius: 10px;
@@ -199,6 +202,7 @@ text-decoration: none;
   font-size: 20px;
   font-family: Verdana;
   transition: all 0.5s 0s ease; 
+}
 }
 
 .button01 a {
@@ -211,6 +215,7 @@ text-decoration: none;
   
 }
 
+@media (hover:hover) {
 .button01 a:hover {
   color: rgb(70, 70, 70);
   border-radius: 10px;
@@ -218,6 +223,8 @@ text-decoration: none;
   font-size: 20px;
   font-family: Verdana;
 }
+}
+
 
 .final-button {
     margin-right: 10px;
@@ -226,13 +233,13 @@ text-decoration: none;
     text-decoration: none;
 }
 
-
+@media (hover:hover) {
 .final-button:hover {
   margin-right: 7px;
   border: 0px;
   transition: all 0.5s 0s ease;
 }
-
+}
 
 .final-button-img {
   height: 30px;
@@ -241,8 +248,10 @@ text-decoration: none;
   transition: all 0.5s 0s ease;
 }
 
+@media (hover:hover) {
 .final-button-img:hover {
   height: 35px;
   border-radius: 5px;
   border: 2px solid rgb(100, 100, 100);
+}
 }
