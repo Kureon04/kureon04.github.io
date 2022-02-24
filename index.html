@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Anime4Life</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <img class="background" src="./img/background.jpg">
+
+    <div id="myNav" class="overlay">
+        <div class="overlay-content">
+            <a href="#" onclick="closeNav()">Inizio</a>
+            <a href="#chi sono" onclick="closeNav()">Chi sono</a>
+            <a href="#manga" onclick="closeNav()">Manga</a>
+            <a href="#fine" onclick="closeNav()">Fine</a>
+            <a href="javascript:void(0)" class="overlay-close" onclick="closeNav()">CHIUDI</a>
+        </div>
+
+    </div>
+    <div style="position: fixed; width: 100%;top: 0;">
+        <span onclick="openNav()">
+            <p class="menu-button">MENU</p>
+        </span>
+    </div>
+
+    <div class="span1">
+        <p class="main-title">Lello Baka</p>
+        <p class="sub-title">Mi piacciono gli Anime, i Manga e Programmare</p>
+    </div>
+    <p id="chi sono">ㅤ</p>
+    <div class="span2">
+        <p class="main-title">Chi sono?</p>
+        <p class="sub-title">Ciao, mi chiamo Leon e sono un weeb per professione, rappresento quello che succede quando
+            non parli più ad una ragazza per anni. Oltre agli anime mi piace programmare, infatti come scuola superiore
+            ho scelto un ITIS orientato alla programmazione. Adesso vado in quarta e non so ancora come si accende un
+            pc.</p>
+    </div>
+    <p id="manga">ㅤ</p>
+    <div class="span3">
+        <p class="main-title">Manga</p>
+        <p class="sub-title" style="margin-bottom:20px;">Ho letto molti manga nella mia lunga carriera da weeb, questi
+            sono i miei tre preferiti. Metto la copertina che considero più bella.</p>
+
+
+
+
+
+
+        <!-- This is a grid -->
+        <div class="grid-type-1">
+
+            <!-- This is a card -->
+            <div class="card-type-1">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/a.jpg" alt="Attack on Titan"
+                                style="width:300px;height:400px;">
+                        </div>
+                        <div class="flip-card-back" style="width:300px;height:400px;">
+                            <p class="card-title">Attack on Titan</p>
+                            <p>Shingeki no Kyojin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This is a card -->
+            <div class="card-type-1">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/tr.jpg" alt="Tokyo Revengers"
+                                style="width:300px;height:400px;">
+                        </div>
+                        <div class="flip-card-back" style="width:300px;height:400px;">
+                            <p class="card-title">Tokyo Revengers</p>
+                            <p>Tōkyō Ribenjāzu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This is a card -->
+            <div class="card-type-1">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/ds.jpg" alt="Cooming Soon"
+                                style="width:300px;height:400px;">
+                        </div>
+                        <div class="flip-card-back" style="width:300px;height:400px;">
+                            <p class="card-title">Jujutsu Kaisen</p>
+                            <p>呪術廻戦</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <p id="fine">ㅤ</p>
+        <div class="span4">
+            <p class="main-title">Fine</p>
+            <p class="sub-title">Il mio HTML è finito, breve ma intenso</br>(un pò come uno scontro con Saitama)</p>
+        </div>
+
+
+
+            <footer class="footer-bar">
+                <div style="position: fixed; width: 100%;">
+                    <p class="copyright">Copyright © 2022 by Leon Klein</p>
+                </div>
+            </footer>
+
+            <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>

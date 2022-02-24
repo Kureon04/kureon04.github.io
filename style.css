@@ -1,0 +1,221 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana;
+    line-height: 30px;
+}
+
+.background {
+    position:fixed;
+    right:0;
+    top:0;
+    min-width:100%;
+    min-height:100%;
+    height:100%;
+    z-index:-100;
+}
+
+.footer-bar {
+    position: absolute;
+    bottom: 20px;
+    padding: 7px 0 7px 0;
+    color: white;
+    width: 100%;
+}
+
+.copyright {
+    color: rgb(201, 201, 201);
+    margin: 0 15px 0 15px;
+    float: right;
+}
+
+.menu-button {
+    margin: 20px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    float: right;
+    z-index: 2000;
+    transition: all 0.3s 0s ease;
+}
+
+.menu-button:hover {
+    color: #b0b0b0;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+/* Position the content inside the overlay */
+    .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    transition: all 0.3s 0s ease;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+.span1 {
+    margin: 45vh 0 50vh 0;
+}
+
+.main-title {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+.sub-title {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 30vw 0 30vw;
+    line-height: 30px;
+}
+
+.span2 {
+    margin: 35vh 0 55vh 0;
+}
+
+.span3 {
+    margin: 30vh 0 50vh 0;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    margin: 20px 0 20px 0;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 10px rgb(80, 80, 80, 0.5);
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgb(50, 50, 50);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* The grid contains the cards, this is the first type */
+.grid-type-1 {
+    text-align: center;
+}
+
+/* The grid contains the cards, this is the second type */
+.grid-type-2 {
+    text-align: center;
+}
+
+/* The cards contains an image and a title, this is the first type */
+.card-type-1 {
+    border-radius: 10px;
+    padding: 0 2vw 1vw 2vw;
+    margin: 0 2vw 1vw 2vw;
+    display: inline-block;
+    transition: all 0.5s 0s ease;
+}
+
+/* The cards contains an image and a title, this is the second type */
+.card-type-2 {
+    background-color: rgb(201, 201, 201);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 220px;
+    box-shadow: 10px 10px 5px #9e9e9e;
+}
+
+/* The cards contains an image and a title, this is the third type */
+.card-type-3 {
+    border-radius: 10px;
+    padding: 0 1vw 0.5vw 1vw;
+    margin: 0 1vw 0.5vw 1vw;
+    display: inline-block;
+    transition: all 0.5s 0s ease;
+}
+
+/* This is the first button type */
+.button-type-1 {
+    margin-right: 10px;
+    border: 0px;
+    transition: all 0.5s 0s ease;
+    text-decoration: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+}
+
+.card-title {
+    color: white;
+    font-family: Verdana;
+    font-size: 30px;
+    margin: 40px 20px 20px 20px;
+}
+
+.span4 {
+    margin: 30vh 0 45vh 0;
+}
